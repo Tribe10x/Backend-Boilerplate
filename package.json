@@ -1,0 +1,26 @@
+{
+   "name": "PadGea-Backend",
+   "version": "0.0.1",
+   "description": "Awesome project developed with TypeORM.",
+   "devDependencies": {
+      "@types/node": "^8.0.29",
+      "nodemon": "^2.0.7",
+      "ts-node": "3.3.0",
+      "typescript": "3.3.3333"
+   },
+   "dependencies": {
+      "@decorators/di": "^1.0.3",
+      "@decorators/express": "^2.5.0",
+      "@types/cors": "^2.8.10",
+      "body-parser": "^1.18.1",
+      "cors": "^2.8.5",
+      "dotenv": "^8.2.0",
+      "express": "^4.15.4",
+      "pg": "^8.4.0",
+      "reflect-metadata": "^0.1.10",
+      "typeorm": "0.2.32"
+   },
+   "scripts": {
+      "start": "nodemon"
+   }
+}
