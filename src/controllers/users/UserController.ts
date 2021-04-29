@@ -2,6 +2,8 @@ import {getRepository} from "typeorm";
 import {NextFunction} from "express";
 import {User} from "../../entity/User";
 
+import { IsAuthorized } from "../../middlewares/IsAuthorized";
+
 import {
     Controller,
     Delete,
@@ -16,7 +18,7 @@ export class UserController {
 
     private userRepository = getRepository(User);
 
-    @Get('/')
+    @Get('/', [IsAuthorized(['Admin', 'User'])])
     async all(@Request() request, @Response() response, next: NextFunction) {
         const users = await this.userRepository.find();
         return response.status(200).send({
