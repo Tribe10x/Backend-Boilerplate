@@ -1,6 +1,6 @@
 {
-   "name": "PadGea-Backend",
-   "version": "0.0.1",
+   "name": "BackendBoilerplateTribe10x",
+   "version": "1.0.0",
    "description": "Awesome project developed with TypeORM.",
    "devDependencies": {
       "@babel/core": "^7.13.16",
